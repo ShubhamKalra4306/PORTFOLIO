@@ -10,9 +10,24 @@ body {
 header#hero {
     position: relative;
     height: 100vh;
-    background-image: url('cyber-security-expert-working-with-technology-neon-lights.jpg');
+    overflow: hidden; /* Prevents overflow from images */
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    transition: opacity 1s ease-in-out;
+    z-index: -1; /* Places it behind the overlay content */
+}
+
+.slide-fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 header .overlay {
@@ -47,6 +62,7 @@ header .btn {
     font-size: 1.2rem;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #0d0d0d;
     padding: 10px;
@@ -71,6 +87,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Section Styles */
 .section {
     padding: 60px 20px;
     text-align: center;
@@ -81,8 +98,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Skills and Project Sections */
-.skills-grid, .project-grid {
+/* Skills, Projects, and Certifications Sections */
+.skills-grid, .project-grid, .certifications-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -121,6 +138,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 400px;
 }
+
 .education-grid {
     display: flex;
     flex-wrap: wrap;
@@ -128,10 +146,12 @@ h2 {
     gap: 15px;
     margin-top: 20px;
 }
+
 #education .education-item h3 {
     color: #00ff99;
     margin-bottom: 5px;
 }
+
 /* Certifications Section */
 .certifications-grid {
     display: flex;
@@ -159,7 +179,7 @@ h2 {
     box-shadow: 0 0 15px rgba(0, 255, 153, 0.6);
 }
 
-/* Contact Form */
+/* Contact Form Styles */
 form#contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -167,7 +187,8 @@ form#contact-form {
     flex-direction: column;
 }
 
-form#contact-form input, form#contact-form textarea {
+form#contact-form input,
+form#contact-form textarea {
     padding: 10px;
     margin: 10px 0;
     border: none;
@@ -186,7 +207,7 @@ form#contact-form button {
     cursor: pointer;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     background-color: #0d0d0d;
     text-align: center;
@@ -208,7 +229,7 @@ footer p {
     background-color: #00ff99;
     padding: 10px;
     border-radius: 50%;
-    display: none;
+    display: none; /* Hidden by default, show via JS when scrolling */
     cursor: pointer;
     font-size: 24px;
 }
@@ -224,6 +245,8 @@ footer p {
     margin-top: 20px;
     display: inline-block;
 }
+
+/* Social Icons in Footer */
 footer .social-icons {
     display: flex;
     justify-content: center;
@@ -241,4 +264,17 @@ footer .social-icons a img {
 footer .social-icons a img:hover {
     transform: scale(1.1);
     filter: invert(54%) sepia(42%) saturate(533%) hue-rotate(121deg) brightness(92%) contrast(90%);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
