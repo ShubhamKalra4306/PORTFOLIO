@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Shubham Kalra - Cybersecurity Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <script defer src="script.js"></script>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+
 <body> 
-    <header id="hero">
-        <div class="overlay">
-            <h1>Shubham Kalra</h1>
-            <p>Cybersecurity Analyst</p>
-            <a href="#about" class="btn">Explore My Work</a>
-        </div>
-    </header>
+  <header id="hero">
+    <div class="overlay">
+        <h1>Shubham Kalra</h1>
+        <p>Cybersecurity Analyst</p>
+        <a href="#about" class="btn">Explore My Work</a>
+    </div>
+    <div class="slideshow"></div>
+</header>
+
 
     <nav>
         <ul>
@@ -26,16 +26,16 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#download" class="btn">Download Resume</a></li> <!-- Resume download link -->
+            <li><a href="#download" class="btn">Download Resume</a></li>
         </ul>
     </nav>
 
-    <section id="about" class="section">
+    <section id="about" class="section fade-in">
         <h2>About Me</h2>
         <p>Hello! I'm Shubham, a recent B.Tech graduate specializing in Cybersecurity. I am passionate about safeguarding digital assets and finding innovative solutions to complex security challenges. Throughout my academic journey, I have gained hands-on experience in various aspects of cybersecurity, including network security, ethical hacking, and risk management. In my free time, I actively participate in cybersecurity forums and projects to stay updated with the latest trends and threats in the field. I believe in the importance of continuous learning and collaboration within the tech community.</p>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section fade-in">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
@@ -57,122 +57,124 @@
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section fade-in">
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="certification-card">
-            <a style="color: aliceblue ;" href="https://github.com/princekalra014/facial-recognition.git" target="_blank" class="project-card">
-                <h3>Facial Recognition App</h3>
-                <p>A web app for secure facial recognition login, built using Angular, Node.js, and OpenCV.</p>
-            </a>
+                <a style="color: aliceblue ;" href="https://github.com/princekalra014/facial-recognition.git" target="_blank" class="project-card">
+                    <h3>Facial Recognition App</h3>
+                    <p>A web app for secure facial recognition login, built using Angular, Node.js, and OpenCV.</p>
+                </a>
             </div>
             <div class="certification-card">
-            <a style="color: aliceblue ;" href="https://github.com/princekalra014/passwordManager.git" target="_blank" class="project-card">
-                <h3>Password Manager</h3>
-                <p>Designed a secure, encrypted password manager for efficient password management.</p>
-            </a>
+                <a style="color: aliceblue ;" href="https://github.com/princekalra014/passwordManager.git" target="_blank" class="project-card">
+                    <h3>Password Manager</h3>
+                    <p>Designed a secure, encrypted password manager for efficient password management.</p>
+                </a>
             </div>
             <div class="certification-card">
-            <a style="color: aliceblue ;"  href="https://github.com/yourusername/network-security-analyzer" target="_blank" class="project-card">
-                <h3>Network Security Analyzer</h3>
-                <p>Built a Python-based tool for real-time monitoring and identifying potential threats in networks.</p>
-            </a>
+                <a style="color: aliceblue ;" href="https://github.com/yourusername/network-security-analyzer" target="_blank" class="project-card">
+                    <h3>Network Security Analyzer</h3>
+                    <p>Built a Python-based tool for real-time monitoring and identifying potential threats in networks.</p>
+                </a>
             </div>
             <div class="certification-card">
-            <a style="color: aliceblue ;" href="https://github.com/ShubhamKalra4306/keylogger" target="_blank" class="project-card">
-                <h3>Key Logger</h3>
-                <p>Developed a keylogger in Python using the pynput library. Recorded keystrokes and saved them to a text file.</p>
-            </a>
+                <a style="color: aliceblue ;" href="https://github.com/ShubhamKalra4306/keylogger" target="_blank" class="project-card">
+                    <h3>Key Logger</h3>
+                    <p>Developed a keylogger in Python using the pynput library. Recorded keystrokes and saved them to a text file.</p>
+                </a>
             </div>
             <div class="certification-card">
-            <a style="color: aliceblue ;" href="https://github.com/yourusername/password-strength-checker" target="_blank" class="project-card">
-                <h3>Password Strength Checker Chrome Extension</h3>
-                <p>Created a Chrome extension that shows password strength instantly, helping users choose more secure passwords.</p>
-            </a>
+                <a style="color: aliceblue ;" href="https://github.com/yourusername/password-strength-checker" target="_blank" class="project-card">
+                    <h3>Password Strength Checker Chrome Extension</h3>
+                    <p>Created a Chrome extension that shows password strength instantly, helping users choose more secure passwords.</p>
+                </a>
             </div>
         </div>
     </section>
     
-
-    <section id="education" class="section"> <!-- Education Section -->
+    <section id="education" class="section fade-in"> <!-- Education Section -->
         <h2>Education</h2>
         <div class="education-grid">
-        <div class="education-item">
-            <h3>Bachelor’s in Technology (Cyber-Security)</h3>
-            <p>Kurukshetra University, Haryana</p>
-            <p>2020 - 2024</p>
+            <div class="education-item">
+                <h3>Bachelor’s in Technology (Cyber-Security)</h3>
+                <p>Kurukshetra University, Haryana</p>
+                <p>2020 - 2024</p>
+            </div>
+            <div class="education-item">
+                <h3>12th Grade</h3>
+                <p>US International School | CBSE</p>
+                <p>2019 - 2020 </p>
+            </div>
+            <div class="education-item">
+                <h3>10th Grade</h3>
+                <p>US International School | CBSE</p>
+                <p>2017 - 2018 </p>
+            </div>
         </div>
-        <div class="education-item">
-            <h3>12th Grade</h3>
-            <p>US International School | CBSE</p>
-            <p>2019 - 2020 | 72%</p>
-        </div>
-        <div class="education-item">
-            <h3>10th Grade</h3>
-            <p>US International School | CBSE</p>
-            <p>2017 - 2018 | 69%</p>
-        </div>
-    </div>
     </section>
 
-</section>
-
-<section id="certifications" class="section">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-        <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1V8gmOIzdGYFZhfj0UBc2I93W2dwi5cyF/view?usp=sharing" target="_blank">Ethical Hacking Essentials - EC-Council</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_2" target="_blank">Cisco Certified Network Associate - Ducat IT Training School</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_3" target="_blank">Cybersecurity Essentials - Cisco</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_4" target="_blank">Digital Forensics Essentials - EC-Council</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_5" target="_blank">Redhat Enterprise Linux - Ducat IT Training School</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1SbmH1Uc_ATNaywHUcQIozqr3t8ENVkXA/view?usp=sharing" target="_blank">Generic Online Training in Cyber-security - MeITY Govt. of India</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_7" target="_blank">Cyber Security Bootcamp - Udemy</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_8" target="_blank">Information Security Fundamental - Udemy</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_9" target="_blank">Scanning Cyber Security Hacking Course - Udemy</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_10" target="_blank">Vulnerability Identification in Cyber Security - Udemy</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_11" target="_blank">Cyber-Security Awareness Programme - NIELIT</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_12" target="_blank">Cyber Awareness Training - Udemy</a></div>
-        <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1dg83DnpD5thHBzKgOCWadaDf6vhLAH0Y/view?usp=sharing" target="_blank">Networking- Cisco</a></div>
-    </div>
-</section>
+    <section id="certifications" class="section fade-in">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1V8gmOIzdGYFZhfj0UBc2I93W2dwi5cyF/view?usp=sharing" target="_blank">Ethical Hacking Essentials - EC-Council</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_2" target="_blank">Cisco Certified Network Associate - Ducat IT Training School</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_3" target="_blank">Cybersecurity Essentials - Cisco</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_4" target="_blank">Digital Forensics Essentials - EC-Council</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_5" target="_blank">Redhat Enterprise Linux - Ducat IT Training School</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1SbmH1Uc_ATNaywHUcQIozqr3t8ENVkXA/view?usp=sharing" target="_blank">Generic Online Training in Cyber-security - MeITY Govt. of India</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_7" target="_blank">Cyber Security Bootcamp - Udemy</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_8" target="_blank">Information Security Fundamental - Udemy</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_9" target="_blank">Scanning Cyber Security Hacking Course - Udemy</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_10" target="_blank">Vulnerability Identification in Cyber Security - Udemy</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_11" target="_blank">Cyber-Security Awareness Programme - NIELIT</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="LINK_TO_CERTIFICATE_12" target="_blank">Cyber Awareness Training - Udemy</a></div>
+            <div class="certification-card"><a style="color: #00ff99 ;" href="https://drive.google.com/file/d/1dg83DnpD5thHBzKgOCWadaDf6vhLAH0Y/view?usp=sharing" target="_blank">Networking- Cisco Networking Academy</a></div>
+        </div>
+    </section>
     
-
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-     <!-- Resume Download Button -->
-     <section id="download" class="section">
+    <section id="download" class="section fade-in">
         <h2>Download My Resume</h2>
-        <a href="https://drive.google.com/file/d/1N7iBjiXXmojyz7xciKGtxbMJ1fmzxDsl/view?usp=sharing" download class="btn">Download Resume</a> <!-- Link to your resume PDF -->
+        <a href="https://drive.google.com/file/d/1N7iBjiXXmojyz7xciKGtxbMJ1fmzxDsl/view?usp=sharing" download class="btn">Download Resume</a>
     </section>
 
     <footer>
-        <p>&copy; Thank you for visiting my portfolio! Feel free to connect with me through:
-        </p>
+        <p>&copy; Thank you for visiting my portfolio! Feel free to connect with me through:</p>
         <div class="social-icons">
-            <a href="https://www.instagram.com/onlykalra" target="_blank">
-                <img src="instagram.png" alt="Instagram Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/shubham-kalra-a197a6235/" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn Icon">
-            </a>
-            <a href="https://github.com/ShubhamKalra4306" target="_blank">
-                <img src="github.png" alt="GitHub Icon">
-            </a>
-            <a href="mailto:shubhamkalra2002@gmail.com" target="_blank">
-                <img src="gmail.png" alt="Gmail Icon">
-            </a>
+            <a href="https://www.instagram.com/onlykalra" target="_blank"><img src="instagram.png" alt="Instagram Icon"></a>
+            <a href="https://www.linkedin.com/in/shubham-kalra-a197a6235/" target="_blank"><img src="linkedin.png" alt="LinkedIn Icon"></a>
+            <a href="https://github.com/ShubhamKalra4306" target="_blank"><img src="github.png" alt="GitHub Icon"></a>
+            <a href="mailto:shubhamkalra2002@gmail.com" target="_blank"><img src="gmail.png" alt="Gmail Icon"></a>
         </div>
     </footer>
-    
 
     <div id="scrollTopBtn" onclick="scrollToTop()">⬆</div>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = [
+                'cyber2.jpg',
+                'cyberr.jpg', // Replace with your actual image paths
+                'cyber1.jpg',
+                
+            ];
+            let currentIndex = 0;
+            const slideshowDiv = document.createElement('div');
+            slideshowDiv.classList.add('slideshow');
+            document.getElementById('hero').appendChild(slideshowDiv);
+        
+            function showNextImage() {
+                slideshowDiv.classList.add('slide-fade');
+                setTimeout(() => {
+                    slideshowDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+                    slideshowDiv.classList.remove('slide-fade');
+                    currentIndex = (currentIndex + 1) % images.length;
+                }, 500);
+            }
+        
+            showNextImage();
+            setInterval(showNextImage, 2000); // Switch every 2 seconds
+        });
+        </script>
+        
 </body>
 </html>
